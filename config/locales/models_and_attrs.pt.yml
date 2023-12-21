@@ -1,0 +1,37 @@
+pt:
+  activerecord:
+    models:
+      user:
+        one: "Usuário"
+        other: "Usuários"     
+      contact:
+        one: "Contato"
+        other: "Contatos"
+      site_information:
+        one: "Informação do Site"
+        other: "Informação do Site"
+      client:
+        one: "Cliente"
+        other: "Clientes"
+    attributes:
+      user:
+        name: "Nome"
+        email: "E-mail"
+      contact:
+        name: "Nome"
+        email: "E-mail"
+        phone: "Telefone"
+        subject: "Assunto"
+        message: "Mensagem"     
+      site_information:
+        address: "Endereço"        
+        email: "E-mail"
+        phone: "Telefone"
+      adsense:
+        title: "Título"
+        status: "Status"
+        created_at: "Criado em"
+        ad_type: "Tipo"     
+      client:
+        image: "Logo"
+        title: "Nome"
