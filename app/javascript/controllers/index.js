@@ -4,23 +4,35 @@
 
 import { application } from "./application"
 
+import CarouselClientController from "./carousel_client_controller"
+application.register("carousel-client", CarouselClientController)
+
 import CarouselController from "./carousel_controller"
 application.register("carousel", CarouselController)
+
+import CarouselSitesController from "./carousel_sites_controller"
+application.register("carousel-sites", CarouselSitesController)
+
+import CarouselThumbController from "./carousel_thumb_controller"
+application.register("carousel-thumb", CarouselThumbController)
+
+import DropzoneController from "./dropzone_controller"
+application.register("dropzone", DropzoneController)
+
+import EmbedController from "./embed_controller"
+application.register("embed", EmbedController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
-import LoadingController from "./loading_controller"
-application.register("loading", LoadingController)
-
-import NavbarController from "./navbar_controller"
-application.register("navbar", NavbarController)
+import NavController from "./nav_controller"
+application.register("nav", NavController)
 
 import NotificationController from "./notification_controller"
 application.register("notification", NotificationController)
 
-import SlideBlogController from "./slide_blog_controller"
-application.register("slide-blog", SlideBlogController)
+import ProcurementsController from "./procurements_controller"
+application.register("procurements", ProcurementsController)
 
-import SlideClientController from "./slide_client_controller"
-application.register("slide-client", SlideClientController)
+import SlideSitesExamplesController from "./slide_sites_examples_controller"
+application.register("slide-sites-examples", SlideSitesExamplesController)

@@ -1,10 +1,59 @@
 @import "swiper/swiper-bundle";
+@import "dropzone/dist/dropzone";
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 @import "./ckeditor";
 
-@import "./shared";
+html {
+  overflow-x: hidden !important;
+}
 
-@import "./news/";
+/* Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: theme("colors.primary");
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: theme("colors.gray.100");
+  border-radius: 10px;
+}
+
+/* Swiper */
+.swiper-slide-thumb-active img {
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: theme("colors.primary");
+}
+
+.bg-custom {
+  position: relative;
+  height: 800px;
+  width: 100%;
+}
+
+.bg-custom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('FundoFooter.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.bg-custom-text {
+  position: relative;
+  z-index: 1;
+
+}

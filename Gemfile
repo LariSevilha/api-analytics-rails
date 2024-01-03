@@ -12,6 +12,7 @@ gem "devise", "~> 4.9", ">= 4.9.2"
 gem "devise-i18n", "~> 1.11"
 gem "email_validator"
 gem "friendly_id", "~> 5.5"
+gem 'google-analytics-data' 
 gem "jsbundling-rails"
 gem "meta-tags", "~> 2.18"
 gem "pg", "~> 1.1"
@@ -26,15 +27,21 @@ gem "sitemap_generator", "~> 6.3"
 gem "sprockets-rails"
 gem "stimulus-rails"
 gem "turbo-rails"
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+gem "tzinfo-data"
 gem "whenever", require: false
+gem "youtube_rails"
+gem 'omniauth-google-oauth2'
+gem 'googleauth', '~> 1.9', '>= 1.9.1'
+gem 'httparty'
 
 group :development, :test do
   gem "better_errors"
   gem "binding_of_caller"
   gem "erb-formatter", "~> 0.4.3"
+  gem "faker", "~> 3.2"
   gem "hotwire-livereload", "~> 1.2", ">= 1.2.3"
   gem "pry-byebug", "~> 3.10", ">= 3.10.1"
+  gem 'dotenv-rails' 
 end
 
 group :development do

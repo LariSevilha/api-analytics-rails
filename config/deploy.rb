@@ -2,10 +2,10 @@ require 'mina/git'
 
 set :domain, 'cloud.agenciaw3.digital'
 set :user, 'agenciaw3'
-set :project_name, 'alcimarcontabilidade'
+set :project_name, 'agenciaw3novo'
 set :deploy_to, "/home/#{user}/rails/#{project_name}/app"
 set :volumes_to, "/home/#{user}/rails/#{project_name}/"
-set :repository, 'git@bitbucket.org:agencia-w3case/alcimar_contabilidade_docker.git'
+set :repository, 'git@bitbucket.org:agencia-w3case/agenciaw3_novo_docker.git'
 set :branch, 'deploy'
 set :port, '63311'
 set :term_mode, nil
@@ -29,7 +29,9 @@ task :deploy do
       invoke :'docker:build'
       invoke :'docker:yarn'
       invoke :'docker:prepare'
-      invoke :'docker:precompile'      
+      invoke :'docker:precompile'
+      invoke :'docker:sitemap_refresh'
+      invoke :'docker:sitemap_crontab'
       invoke :'docker:up'
     end
   end

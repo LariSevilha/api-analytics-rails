@@ -138,6 +138,7 @@ pt:
       wrong_length:
         one: não possui o tamanho esperado (%{count} caracter)
         other: não possui o tamanho esperado (%{count} caracteres)
+      extension_allowlist_error: "Extensão do arquivo não permitido"
     template:
       body: "Por favor, verifique o(s) seguinte(s) campo(s):"
       header:

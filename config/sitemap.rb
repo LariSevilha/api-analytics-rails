@@ -27,9 +27,14 @@ SitemapGenerator::Sitemap.create do
   #     add article_path(article), :lastmod => article.updated_at
   #   end
 
-  # add posts_path, priority: 0.9, changefreq: 'daily'
+  add posts_path, priority: 0.9, changefreq: 'daily'
+  add services_path, priority: 0.8, changefreq: 'weekly'
+  add contacts_path, priority: 0.8, changefreq: 'weekly'
+  add sites_index_path, priority: 0.8, changefreq: 'weekly'
+  add client_path, priority: 0.7, changefreq: 'weekly'
+  add about_path, priority: 0.7, changefreq: 'weekly'
   
-  # Post.where('date_publish <= ? AND is_published = ?', Time.current, true).find_each do |post|
-  #   add post_path(post), lastmod: post.updated_at, priority: 0.7, changefreq: 'weekly'
-  # end
+  Post.where('date_publish <= ? AND is_published = ?', Time.current, true).find_each do |post|
+    add post_path(post), lastmod: post.updated_at, priority: 0.7, changefreq: 'weekly'
+  end
 end

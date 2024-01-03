@@ -93,8 +93,8 @@ networks:
     driver: bridge
     ipam:
       config:
-        - subnet: 10.0.81.0/24
-          gateway: 10.0.81.1
+        - subnet: 10.0.37.0/24
+          gateway: 10.0.37.1
     name: "${COMPOSE_PROJECT_NAME}_network"
 
   nginx-network:

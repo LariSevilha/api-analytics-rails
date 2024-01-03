@@ -1,9 +1,33 @@
-.form-control {
-  max-width: 925px;
-}
-
 .btn-toggle {
   width: 100%;
   display: flex;
   gap: 4px;
+}
+
+/* Style for icons in Access Link */
+.icon-option input[type="radio"] {
+  display: none;
+}
+
+.icon-preview svg {
+  height: 32px;
+  cursor: pointer;
+}
+
+.icon-preview:hover {
+  color: red;
+}
+
+.icon-option input[type="radio"]:checked+.icon-preview {
+  color: red;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+.icon-selector {
+  max-width: 925px;
+}
+
+.ra-multiselect-item-add-all {
+  display: none !important;
 }

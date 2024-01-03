@@ -3,17 +3,137 @@ pt:
     models:
       user:
         one: "Usuário"
-        other: "Usuários"     
+        other: "Usuários"
+      post:
+        one: "Notícia"
+        other: "Notícias"
+      post_category:
+        one: "Categoria"
+        other: "Categorias"
+      album:
+        one: "Álbum"
+        other: "Álbuns"
+      album_category:
+        one: "Categoria de Álbum"
+        other: "Categoria de Álbuns"
+      banner:
+        one: "Banner"
+        other: "Banners"
       contact:
         one: "Contato"
         other: "Contatos"
       site_information:
         one: "Informação do Site"
         other: "Informação do Site"
-      client:
-        one: "Cliente"
-        other: "Clientes"
+      top_link:
+        one: "Link de Topo"
+        other: "Links de Topo"
+      slide:
+        one: "Slide"
+        other: "Slides"
+      legislator:
+        one: "Vereador"
+        other: "Vereadores"
+      main_board:
+        one: "Mesa Diretora"
+        other: "Mesas Diretoras"
+      page_category:
+        one: "Categoria de Página"
+        other: "Categorias de Página"
+      page:
+        one: "Página"
+        other: "Páginas"
+      page_archive:
+        one: "Arquivo"
+        other: "Arquivos"
+      access_link:
+        one: "Acesso Rápido"
+        other: "Acesso Rápido"
+      document_type:
+        one: "Tipo de Documento"
+        other: "Tipos de Documento"
+      document:
+        one: "Documento"
+        other: "Documentos"
+      law_type:
+        one: "Tipo de Lei"
+        other: "Tipos de Lei"
+      photo_service:
+        one: "Fotos do Serviço"
+        other: "Fotos do Serviço"
+      law:
+        one: "Projeto de Lei"
+        other: "Projetos de Lei"
+      meeting_type:
+        one: "Categoria de Ata e Pauta"
+        other: "Categorias de Ata e Pauta"
+      meeting:
+        one: "Ata e Pauta"
+        other: "Atas e Pautas"
+      modality:
+        one: "Modalidade de Licitação"
+        other: "Modalidades de Licitação"
+      procurement:
+        one: "Licitação"
+        other: "Licitações"
+      procurement_file:
+        one: "Arquivo de Licitação"
+        other: "Arquivos de Licitação"
+      about: "Sobre nós"
+      card_about: "Cards sobre nós"
+      archive_about: "Clientes"
+      service: "Serviços"
+      category_site: "Categoria"
+      client: "Clientes"
+      file_client: "Cliente"
+      category_help: "Categoria de Ajuda"
+      help: "Ajuda"
     attributes:
+      category_help:
+        title: "Titulo"
+        description: "Descrição"
+        icon: "Icone"
+      help:
+        category_help: "Categoria da Ajuda"
+        title: "Titulo"
+        icon: "Icone"
+      client:
+        title: "Título"
+        description: "Descrição"
+        file_clients: "Clientes"
+      file_client:
+        name: "Nome"
+        image: "Imagem"
+      category_site:
+        title: "Título"
+      site:
+        category_site: "Categoria"
+        title: "Título"
+        description: "Descrição"
+        phone: "Telefone"
+        link: "Link do site"
+        image: "Imagem"
+      service:
+        title: "Título Geral"
+        description: "Descrição do Serviço"
+        text: "Titulo do Serviço"
+        icon: "Icone do Serviço"
+        featured: "Destaque?"
+        photo_services: "Fotos"
+      photo_service:
+        photo: "Foto"
+      about:
+        title: "Título"
+        text: "Descrição"
+        card_abouts: "Card"
+        image: "Imagem"
+      card_about:
+        title: "Título"
+        description: "Descrição"
+        icon: "Icone"
+      archive_about:
+        name: "Nome do cliente"
+        file: "Logo"
       user:
         name: "Nome"
         email: "E-mail"
@@ -22,16 +142,141 @@ pt:
         email: "E-mail"
         phone: "Telefone"
         subject: "Assunto"
-        message: "Mensagem"     
+        message: "Mensagem"
+      post:
+        title: "Título"
+        summary: "Sumário"
+        written_by: "Escrito por"
+        source: "Fonte"
+        post_category: "Categoria"
+        cover: "Capa"
+        date_publish: "Data da Notícia"
+        is_published: "Publicar?"
+        content: "Conteúdo"
+        legislator: "Vereadores"
+        post_views_count: "Visualizações"
+      post_category:
+        name: "Nome"
+      album:
+        title: "Título"
+        date_publish: "Data da Publicação"
+        album_category: "Categoria"
+        photos: "Fotos"
+        description: "Descrição"
+        featured: "Destaque?"
+      photo:
+        image: "Imagem"
+        cover: "Capa"
+      album_category:
+        name: "Nome"
       site_information:
-        address: "Endereço"        
+        logo: "Logo"
         email: "E-mail"
         phone: "Telefone"
+        address: "Endereço"
+        city: "Cidade"
       adsense:
         title: "Título"
         status: "Status"
         created_at: "Criado em"
-        ad_type: "Tipo"     
-      client:
-        image: "Logo"
-        title: "Nome"
+        ad_type: "Tipo"
+      banner:
+        type_format: "Formato"
+        title: "Título"
+        initial_date: "Data de início"
+        final_date: "Data de fim"
+        url: "Link"
+        file: "Imagem"
+        target_blank: "Abrir em nova página?"
+        status: "Ativo?"
+      top_link:
+        name: "Nome"
+        url: "Link"
+        status: "Ativo?"
+        target_blank: "Abrir em nova página?"
+      slide:
+        title: "Título"
+        image: "Imagem"
+        status: "Ativo?"
+      video:
+        date_publish: "Data de Publicação"
+        title: "Título"
+        url: "Url"
+        description: "Descrição"
+        featured: "Destaque?"
+      legislator:
+        name: "Nome"
+        image: "Foto"
+        party: "Partido"
+        votes: "Votos"
+        email: "E-mail"
+        birthplace: "Naturalidade"
+        birthdate: "Data de Nascimento"
+        education: "Escolaridade"
+        profession: "Profissão"
+      main_board:
+        first_secretary: "Primeiro Secretário(a)"
+        president: "Presidente"
+        second_secretary: "Segundo Secretário(a)"
+        vice_president: "Vice Presidente"
+      page_category:
+        title: "Título"
+      page:
+        title: "Título"
+        page_category: "Categoria de Página"
+        image: "Imagem"
+        content: "Conteúdo"
+        page_link: "Link da Página"
+        status: "Ativo?"
+        page_archives: "Arquivos da Página"
+      page_archive:
+        title: "Título"
+        file: "Arquivo"
+      access_link:
+        title: "Título"
+        link: "Link"
+        icon: "Ícone"
+      document_type:
+        title: "Título"
+      document:
+        document_number: "Número do Documento"
+        document_type: "Tipo do Documento"
+        status: "Situação do Documento"
+        publish_date: "Data de Publicação"
+        description: "Descrição"
+        file: "Arquivo"
+        legislator: "Responsável"
+      law_type:
+        title: "Título"
+      law:
+        law_number: "Número do Documento"
+        law_type: "Tipo do Lei"
+        status: "Situação da Lei"
+        publish_date: "Data de Publicação"
+        description: "Descrição"
+        file: "Arquivo"
+        legislator: "Responsável"
+      meeting_type:
+        title: "Título"
+      meeting:
+        meeting_number: "Número do Ata/Pauta"
+        meeting_type: "Tipo"
+        status: "Situação"
+        publish_date: "Data de Publicação"
+        description: "Descrição"
+        file: "Arquivo"
+        legislator: "Responsável"
+      modality:
+        title: "Título"
+      procurement:
+        number: "Número"
+        publish_date: "Julgamento"
+        status: "Status Licitação"
+        modality: "Modalidade"
+        date_start: "Processo"
+        procurement_files: "Arquivos"
+        date_end: "Abertura"
+        object: "Objeto"
+      procurement_file:
+        title: "Título"
+        file: "Arquivo"

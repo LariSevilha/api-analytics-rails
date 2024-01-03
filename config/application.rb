@@ -24,12 +24,12 @@ module SkeletonRails7Esbuild
     config.load_defaults 7.0
 
     ## Log to STDOUT because Docker expects all processes to log here. You could
-    # then collect logs using journald, syslog or forward them somewhere else.
+    # then collect logs using journald, syslog, or forward them somewhere else.
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
 
-    # Reduce log spam.  
+    # Reduce log spam.
     config.log_level = :warn
 
     # Set Redis as the back-end for the cache.
@@ -37,10 +37,15 @@ module SkeletonRails7Esbuild
       url: ENV.fetch("REDIS_URL") { "redis://redis:6379/1" },
       namespace: "cache"
     }
-  
+
     # Don't generate system test files.
     config.generators.system_tests = nil
 
     config.middleware.use Rack::Deflater
   end
+end
+ 
+if ['development', 'test'].include?(Rails.env)
+  Bundler.require(*Rails.groups)
+  Dotenv::Railtie.load
 end

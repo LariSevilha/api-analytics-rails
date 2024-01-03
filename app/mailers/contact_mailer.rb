@@ -5,8 +5,8 @@ class ContactMailer < ActionMailer::Base
     @contact = contact
 
     mail(
-      to: ENV["SMTP_FROM_MAIL"],
-      from: ENV["SMTP_USER_NAME"],
+      to: 'financeiro@agenciaw3.digital',
+      from: ENV['SMTP_USER_NAME'],
       subject: "Formulário de contato"
     )
   end
