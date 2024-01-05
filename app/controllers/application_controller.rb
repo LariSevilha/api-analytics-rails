@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   
   def page_info
     set_meta_tags(
-      site: "Agência W3",
+      site: "Monitoramento Google analitycs",
       title: "Página de Início"
     )
     

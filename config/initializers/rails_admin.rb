@@ -64,7 +64,7 @@ RailsAdmin.config do |config|
     # history_show
 
     drop_zone do
-      only ["Album"]
+      only [""]
     end
 
   end

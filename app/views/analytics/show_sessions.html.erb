@@ -1,14 +1,27 @@
-<div class="container mx-auto">
-  <h1 class="text-2xl font-bold mb-4">Totais nas Últimas 24 Horas:</h1>
-  <ul>
-    <li class="mb-2">Usuários Totais:
-      <span class="font-bold"><%= @totals[:total_users] %></span></li>
-    <li class="mb-2">Usuários Ativos:
-      <span class="font-bold"><%= @totals[:total_active_users] %></span></li>
-    <li class="mb-2">Novos Usuários:
-      <span class="font-bold"><%= @totals[:total_new_users] %></span></li>
-    <li class="mb-2">Total Active 7-Day Users:
-      <span class="font-bold"><%= @totals[:total_active_7_day_users] %></span></li>
-  </ul>
+<h1 class="text-center text-2xl font-bold mb-4 mt-5">Monitoramento nas últimas 24 Horas:</h1>
+<div class="grafic">
+  <div class="grafic-container">
+    <div class="grafic-container-card">
+      <div class="box topbox">
+        <div class="item">
+          <span>Usuários Totais:</span>
+          <h2><%= @totals[:total_users] %></h2>
+        </div>
+        <div class="item">
+          <span>Usuários Ativos:</span>
+          <h2><%= @totals[:total_active_users] %></h2>
+        </div>
+        <div class="item">
+          <span>Novos Usuários:</span>
+          <h2><%= @totals[:total_new_users] %></h2>
+        </div>
+        <div class="item">
+          <span>Usuários totais nos ultimos 7 dias:</span>
+          <h2><%= @totals[:total_active_7_day_users] %></h2>
+        </div>
+      </div>
+      <%= link_to "Sair", destroy_user_session_path, class: "some-css-class bg-red-500 text-white font-bold py-2 px-4 rounded", data: { turbo_method: :delete } %>
+      <p class="observation mt-20">*Dados atualizados a cada 24 horas</p>
+    </div>
+  </div>
 </div>
-<%= link_to "Sign Out", destroy_user_session_path, class: "some-css-class bg-blue-500 text-white font-bold py-2 px-4 rounded", data: { turbo_method: :delete } %>

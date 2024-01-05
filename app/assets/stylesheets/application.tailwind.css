@@ -55,5 +55,77 @@ html {
 .bg-custom-text {
   position: relative;
   z-index: 1;
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.grafic {
+  width: 100%;
+}
+
+.grafic-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px;
+}
+
+.grafic-container-card {
+  width: calc((100%/3)*2);
+  height: 300px;
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid rgb(222, 222, 222);
+  background-color: white;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.06);
+  font: 500 14px/20px Google Sans,Arial,Helvetica,sans-serif;
+  color: rgb(93, 93, 93);
+}
+
+.box {
+  display: flex;
+  height: calc(100%/3);
+}
+
+.topbox {
+  /* justify-content: space-between; */
+  gap: 10%;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.item h2 {
+  margin: 0;
+}
+
+.item span {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 460px) {
+  .grafic-container {
+    max-width: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grafic-container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .grafic-container {
+    max-width: 990px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grafic-container {
+    max-width: 1200px;
+  }
 }

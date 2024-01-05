@@ -45,6 +45,9 @@ sudo nano ~/.zshrc
 # Adicione a linha
 alias run="./run"
 
+# Verificar se o projeto está com o e-mail autorizado no google analitycs 
+
+
 # Para funcionar sem precisar fechar e abrir o terminal
 source ~/.zshrc
 ```
